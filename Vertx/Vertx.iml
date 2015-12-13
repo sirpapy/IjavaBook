@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-api-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-connector-basic-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-impl-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-spi-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-transport-file-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-transport-http-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-util-1.0.0.v20140518.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/antlr4-runtime-4.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/bcpg-jdk15on-1.52.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/bcprov-jdk15on-1.52.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/bson-3.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/c3p0-0.9.5-pre10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-beanutils-1.8.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-codec-1.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-collections-3.2.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-jexl-2.1.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-lang3-3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/concurrentlinkedhashmap-lru-1.3.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/groovy-all-2.3.10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/handlebars-1.3.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/hazelcast-3.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/httpclient-4.2.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/httpcore-4.2.5.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jackson-annotations-2.5.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jackson-core-2.5.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jackson-databind-2.5.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jade4j-0.4.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jcl-over-slf4j-1.6.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jruby-complete-1.7.20.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-aether-provider-3.1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-model-3.1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-model-builder-3.1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-repository-metadata-3.1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mchange-commons-java-0.2.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/metrics-core-3.1.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mongodb-driver-async-3.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mongodb-driver-core-3.0.2.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mvel2-2.2.0.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-buffer-4.0.28.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-codec-4.0.28.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-codec-http-4.0.28.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-common-4.0.28.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-handler-4.0.28.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-transport-4.0.28.Final.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/ognl-3.0.6.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/plexus-interpolation-1.16.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/plexus-utils-3.0.10.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/reactive-streams-1.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/rhino-1.7R4.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/rxgroovy-1.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/rxjava-1.0.8.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/shiro-core-1.2.3.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/slf4j-api-1.6.1.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/thymeleaf-2.1.2.RELEASE.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-common-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-jdbc-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-jwt-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-shiro-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-core-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-dropwizard-metrics-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-hazelcast-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-http-service-factory-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-jdbc-client-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-lang-groovy-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-lang-js-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-lang-ruby-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mail-client-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mail-service-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-maven-service-factory-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mongo-client-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mongo-embedded-db-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mongo-service-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-reactive-streams-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-redis-client-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-rx-groovy-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-rx-java-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-rx-js-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-service-factory-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-service-proxy-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-sql-common-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-unit-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-web-3.0.0.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/jdk.jshell.jar!/" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library name="aether-api-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-api-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="aether-connector-basic-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-connector-basic-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="aether-impl-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-impl-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="aether-spi-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-spi-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="aether-transport-file-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-transport-file-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="aether-transport-http-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-transport-http-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="aether-util-1.0.0.v20140518.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/aether-util-1.0.0.v20140518.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="antlr4-runtime-4.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/antlr4-runtime-4.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="bcpg-jdk15on-1.52.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/bcpg-jdk15on-1.52.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="bcprov-jdk15on-1.52.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/bcprov-jdk15on-1.52.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="bson-3.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/bson-3.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="c3p0-0.9.5-pre10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/c3p0-0.9.5-pre10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-beanutils-1.8.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-beanutils-1.8.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-codec-1.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-codec-1.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-collections-3.2.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-collections-3.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-jexl-2.1.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-jexl-2.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-lang3-3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/commons-lang3-3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="concurrentlinkedhashmap-lru-1.3.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/concurrentlinkedhashmap-lru-1.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="groovy-all-2.3.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/groovy-all-2.3.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="handlebars-1.3.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/handlebars-1.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="hazelcast-3.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/hazelcast-3.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="httpclient-4.2.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/httpclient-4.2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="httpcore-4.2.5.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/httpcore-4.2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jackson-annotations-2.5.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jackson-annotations-2.5.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jackson-core-2.5.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jackson-core-2.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jackson-databind-2.5.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jackson-databind-2.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jade4j-0.4.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jade4j-0.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jcl-over-slf4j-1.6.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jcl-over-slf4j-1.6.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="jruby-complete-1.7.20.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/jruby-complete-1.7.20.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="maven-aether-provider-3.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-aether-provider-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="maven-model-3.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-model-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="maven-model-builder-3.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-model-builder-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="maven-repository-metadata-3.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/maven-repository-metadata-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="mchange-commons-java-0.2.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mchange-commons-java-0.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="metrics-core-3.1.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/metrics-core-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="mongodb-driver-async-3.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mongodb-driver-async-3.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="mongodb-driver-core-3.0.2.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mongodb-driver-core-3.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="mvel2-2.2.0.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/mvel2-2.2.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="netty-buffer-4.0.28.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-buffer-4.0.28.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="netty-codec-4.0.28.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-codec-4.0.28.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="netty-codec-http-4.0.28.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-codec-http-4.0.28.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="netty-common-4.0.28.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-common-4.0.28.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="netty-handler-4.0.28.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-handler-4.0.28.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="netty-transport-4.0.28.Final.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/netty-transport-4.0.28.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="ognl-3.0.6.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/ognl-3.0.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="plexus-interpolation-1.16.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/plexus-interpolation-1.16.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="plexus-utils-3.0.10.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/plexus-utils-3.0.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="reactive-streams-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/reactive-streams-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="rhino-1.7R4.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/rhino-1.7R4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="rxgroovy-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/rxgroovy-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="rxjava-1.0.8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/rxjava-1.0.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="shiro-core-1.2.3.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/shiro-core-1.2.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="slf4j-api-1.6.1.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/slf4j-api-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="thymeleaf-2.1.2.RELEASE.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/thymeleaf-2.1.2.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-auth-common-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-common-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-auth-jdbc-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-jdbc-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-auth-jwt-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-jwt-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-auth-shiro-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-auth-shiro-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-core-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-core-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-dropwizard-metrics-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-dropwizard-metrics-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-hazelcast-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-hazelcast-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-http-service-factory-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-http-service-factory-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-jdbc-client-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-jdbc-client-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-lang-groovy-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-lang-groovy-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-lang-js-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-lang-js-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-lang-ruby-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-lang-ruby-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-mail-client-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mail-client-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-mail-service-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mail-service-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-maven-service-factory-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-maven-service-factory-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-mongo-client-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mongo-client-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-mongo-embedded-db-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mongo-embedded-db-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-mongo-service-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-mongo-service-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-reactive-streams-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-reactive-streams-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-redis-client-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-redis-client-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-rx-groovy-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-rx-groovy-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-rx-java-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-rx-java-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-rx-js-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-rx-js-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-service-factory-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-service-factory-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-service-proxy-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-service-proxy-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-sql-common-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-sql-common-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-unit-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-unit-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="vertx-web-3.0.0.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/vert.x-3.0.0/lib/vertx-web-3.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jdk.jshell.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/jdk.jshell.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/jdk.jshell.zip!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="jdk" jdkName="jre1.8.0_65" jdkType="JavaSDK" />
+  </component>
+</module>
