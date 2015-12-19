@@ -14,6 +14,7 @@ import io.vertx.core.http.ServerWebSocket;
 import io.vertx.ext.web.Route;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
+import io.vertx.ext.web.handler.BodyHandler;
 import io.vertx.ext.web.handler.StaticHandler;
 import jdk.jshell.JShell;
 
@@ -58,14 +59,18 @@ public class MainVertx extends AbstractVerticle {
 		System.out.println("Serveur lancé");
 		exercises.init();
 		Router router = Router.router(vertx);
+
 		router.get("/exercice/:id").handler(exercises::getExercice);
+
+		router.route().consumes("application/json");
+		router.route().produces("application/json");
 		router.route().handler(StaticHandler.create());
-		Route route2 = router.post("/eventbus/");
+		/*Route route2 = router.post("/eventbus/");
 		route2.handler(RoutingContext -> {
 			HttpServerRequest request = RoutingContext.request();
 			request.bodyHandler(req -> JshellHandler(RoutingContext, req));
 
-		});
+		});*/
 		router.route("/exercice").handler(RoutingContext -> {
 			// String auctionId = RoutingContext.request().getParam("id");
 			HttpServerResponse response = RoutingContext.response();
@@ -77,6 +82,12 @@ public class MainVertx extends AbstractVerticle {
 		updateExercice(1);
 
 	}
+	
+
+	
+	
+	
+	
 
 	private void updateExercice(int i) {
 
@@ -84,10 +95,10 @@ public class MainVertx extends AbstractVerticle {
 			@Override
 			public void handle(final ServerWebSocket ws) {
 				vertx.setPeriodic(1000l, t -> {
-					// if (watcher.isModified(1) == true) {
-					ws.writeFinalTextFrame(MarkDownHandler.markdownUpdater("Exercice1.txt"));
-					System.out.println("Modification detecté!!!!!");
-					// }
+					if (watcher.isModified(1) == true) {
+						ws.writeFinalTextFrame(MarkDownHandler.markdownUpdater(Paths.get("Exercice1.txt")));
+						System.out.println("Modification detecté!!!!!");
+					}
 				});
 			}
 
