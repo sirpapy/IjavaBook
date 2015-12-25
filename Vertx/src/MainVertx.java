@@ -3,9 +3,11 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.buffer.Buffer;
 import io.vertx.core.http.HttpServer;
 import io.vertx.core.http.HttpServerRequest;
@@ -60,17 +62,14 @@ public class MainVertx extends AbstractVerticle {
 		exercises.init();
 		Router router = Router.router(vertx);
 
+		router.route("/").handler(BodyHandler.create());
+		router.route("/exercice/*").handler(StaticHandler.create("webroot"));
 		router.get("/exercice/:id").handler(exercises::getExercice);
-
-		router.route().consumes("application/json");
-		router.route().produces("application/json");
-		router.route().handler(StaticHandler.create());
-		/*Route route2 = router.post("/eventbus/");
+		Route route2 = router.post("/eventbus/");
 		route2.handler(RoutingContext -> {
 			HttpServerRequest request = RoutingContext.request();
 			request.bodyHandler(req -> JshellHandler(RoutingContext, req));
-
-		});*/
+		});
 		router.route("/exercice").handler(RoutingContext -> {
 			// String auctionId = RoutingContext.request().getParam("id");
 			HttpServerResponse response = RoutingContext.response();
@@ -82,12 +81,6 @@ public class MainVertx extends AbstractVerticle {
 		updateExercice(1);
 
 	}
-	
-
-	
-	
-	
-	
 
 	private void updateExercice(int i) {
 
@@ -107,7 +100,11 @@ public class MainVertx extends AbstractVerticle {
 
 	public static void main(String args[]) {
 		Vertx vertx = Vertx.vertx();
-
+		/*
+		 * VertxOptions options = new VertxOptions();
+		 * options.setMaxEventLoopExecuteTime(Long.MAX_VALUE); vertx =
+		 * Vertx.vertx(options);
+		 */
 		vertx.deployVerticle(new MainVertx());
 	}
 }

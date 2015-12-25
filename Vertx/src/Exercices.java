@@ -26,8 +26,8 @@ public class Exercices {
 
 	public void init() {
 		exercice.put(0, new Exercice(0, Paths.get("Exercice 0")));
-		exercice.put(1, new Exercice(0, Paths.get("Exercice 1")));
-		exercice.put(2, new Exercice(0, Paths.get("Exercice 2")));
+		exercice.put(1, new Exercice(1, Paths.get("Exercice 1")));
+		exercice.put(2, new Exercice(2, Paths.get("Exercice 2")));
 	}
 
 }

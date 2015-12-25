@@ -2,8 +2,33 @@
 //document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
 
 
+    $(function () {
+        load();
+    });
 
+    
+    function update(id, name, origin) {
+        $.ajax({
+            method: "PUT",
+            url: "/api/whiskies/" + id,
+            data: JSON.stringify({name: name, origin: origin})
+        }).done(function () {
+            load();
+        });
+    }
+    function load() {
+    	var adress = window.location+"";
+    	adress = adress.split("/");
+    	alert(adress[adress.length -1]);
+        $.getJSON("exercice", function (data) {
+            $.each(data, function (key, val) {
+            	document.getElementById('Exercice').innerHTML = val.content;
+            });
+            initCallbacks();
+        });
+    }
 
+       
 
 var socket = new WebSocket("ws://localhost:8080/eventbus2");
 

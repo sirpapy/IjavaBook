@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="jdk.jshell.jar" sourcepath="jdk.jshell.zip"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/netty-handler-4.0.28.Final.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_65"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/pegdown-1.6.0-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/jdk.jshell.jar"/>
@@ -11,7 +12,15 @@
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-java-1.1.7-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/pegdown-1.6.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/pegdown-1.6.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-core-1.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-core-1.1.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-core-1.1.7-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-scala-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-scala-1.0.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-scala-1.0.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/Downloads/asm-all-5.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-core-3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-web-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/aether-api-1.0.0.v20140518.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/aether-connector-basic-1.0.0.v20140518.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/aether-impl-1.0.0.v20140518.jar"/>
@@ -54,7 +63,6 @@
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/netty-codec-4.0.28.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/netty-codec-http-4.0.28.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/netty-common-4.0.28.Final.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/netty-handler-4.0.28.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/netty-transport-4.0.28.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/ognl-3.0.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/plexus-interpolation-1.16.jar"/>
@@ -70,7 +78,6 @@
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-auth-jdbc-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-auth-jwt-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-auth-shiro-3.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-core-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-dropwizard-metrics-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-hazelcast-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-http-service-factory-3.0.0.jar"/>
@@ -93,13 +100,5 @@
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-service-proxy-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-sql-common-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-unit-3.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/vert.x-3.0.0/lib/vertx-web-3.0.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-core-1.1.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-core-1.1.7-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-core-1.1.7-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-scala-1.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-scala-1.0.2-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/workspace/Vertx/parboiled-scala-1.0.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sirpapy/Downloads/asm-all-5.0.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
