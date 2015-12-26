@@ -1,17 +1,7 @@
-<html>
-<head>
-<script> var id_exo=-1; </script>
-</head>
 
-<script src="http://cdn.sockjs.org/sockjs-0.3.4.min.js"></script>
+//document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
 
-<script src="exercice/asset/jquery-2.1.4.js"></script>
-<script src="exercice/asset/sockjs-0.3.4.min.js"></script>
-<script src="exercice/asset/vertx-eventbus.js"></script>
-<script src="exercice/asset/vertxbus-3.0.0.js"></script>
 
-<script src="exercice/asset/javascript.js"></script>
-<script>
 adress = window.location+"";
 adress = adress.split("/");
 adress = adress[adress.length-1];
@@ -19,7 +9,7 @@ adress = adress.split("?");
 adress = adress[adress.length-1];
 adress = adress.split("=");
 adress = adress[adress.length-1];
-
+alert(adress);
 
 
 var socket = new WebSocket("ws://localhost:8080/eventbus2");
@@ -32,6 +22,7 @@ var socket = new WebSocket("ws://localhost:8080/eventbus2");
     
 
 var socket = new WebSocket("ws://localhost:8080/exercice/*");
+
     socket.onmessage = function(event) {
        // alert("Received data from websocket: " + event.data);
         document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n';
@@ -91,30 +82,3 @@ xhr.onreadystatechange = function() {
 		document.getElementById('resultat').innerHTML = xhr.responseText;
 	}
 };
-</script>
-
-<body>
-
-	<h3>JshellBook</h3>
-	<form>
-		<!-- Current price:  -->
-		<div id="Exercice"></div>
-		<div>
-			Entrez votre code: </br>
-			<div id="codeArea">
-				<textarea id="code" type="text" rows="4" cols="100">System.out.println("salut");</textarea>
-				</br>
-			</div>
-			<input type="button" onclick="envoieCode();" value="Envoyer">
-
-
-		</div>
-		<div>
-			Resultat:
-			<div id="resultat"></div>
-		</div>
-	</form>
-
-</body>
-
-</html>

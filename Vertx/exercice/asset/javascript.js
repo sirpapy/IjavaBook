@@ -1,45 +1,27 @@
-
 //document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
 
+adress = window.location + "";
+adress = adress.split("/");
+adress = adress[adress.length - 1];
+adress = adress.split("?");
+adress = adress[adress.length - 1];
+adress = adress.split("=");
+adress = adress[adress.length - 1];
 
-
-
-
-var socket = new WebSocket("ws://localhost:8080/eventbus2");
-
-    socket.onmessage = function(event) {
-       // alert("Received data from websocket: " + event.data);
-        document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n';
-    }
-
-    
-
-var socket = new WebSocket("ws://localhost:8080/exercice/*");
-
-    socket.onmessage = function(event) {
-       // alert("Received data from websocket: " + event.data);
-        document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n';
-    }
-
-    
-
-
-
-
-
-
-
-
-
-
+path = "ws://localhost:8080/exercice?id=" + adress;
+alert(path);
+var socket = new WebSocket(path);
+socket.onmessage = function(event) {
+	// alert("Received data from websocket: " + event.data);
+	document.getElementById('Exercice').innerHTML = "->" + event.data + "<-"
+			+ '\n';
+}
 
 function envoieCode() {
 	xhr.open("POST", "/eventbus", true);
 	alert(document.getElementById('code').value);
 	xhr.send(document.getElementById('code').value);
 }
-
-
 
 $(document).bind(
 		'keypress',
@@ -51,7 +33,9 @@ $(document).bind(
 				// <textarea>qsldjhflqksjhd</textarea>');
 				document.getElementById('codeArea').innerHTML = document
 						.getElementById('codeArea').innerHTML
-						+ '</br> </br> <textarea code="code"'+1+'"></textarea>'
+						+ '</br> </br> <textarea code="code"'
+						+ 1
+						+ '"></textarea>'
 				envoieCode();
 			}
 		});

@@ -1,7 +1,6 @@
 import java.nio.file.Paths;
 import java.util.HashMap;
 
-import io.vertx.core.AbstractVerticle;
 import io.vertx.ext.web.RoutingContext;
 
 public class Exercices {
