@@ -1,0 +1,23 @@
+public static void main(String[] args) throws IOException, InterruptedException {
+
+		Path path = Paths.get("/home/maugan/Bureau");
+		WatchDirectory wd = new WatchDirectory(path);
+		
+		  new Thread(() -> { 
+			  try {
+				for(;;){
+				System.out.println(wd.takeModifiedExercise());
+				}
+			} catch (Exception e) {} 
+			  
+		  }).start();
+		  
+		  
+		  new Thread(() -> { 
+			  try { 
+				  wd.startDirectory(); 
+		    } catch (Exception e){} 
+			  
+		  }).start();
+		 
+	}
