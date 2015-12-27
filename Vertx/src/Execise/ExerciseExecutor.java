@@ -15,14 +15,12 @@ import jdk.jshell.JShell;
 public class ExerciseExecutor {
 
 	private List<String> listCode;
+	StringBuilder st;
+	PrintStream out;
+	PrintStream err;
 
 	public String execute(List<String> sourceCode) throws IOException {
-		StringBuilder st = new StringBuilder();
-		PrintStream out = new PrintStream("out.txt");
-		PrintStream err = new PrintStream("err.txt");
-		JShell jshell = JShell.builder().out(out).build();
-		System.setOut(out);
-		System.setErr(err);
+		JShell jshell = initPrintStreamVariable();
 		for (String code : sourceCode) {
 			jshell.eval(code).stream().filter(s -> s.status().toString().equals("REJECTED"))
 					.forEach(s -> err.println(code));
@@ -33,6 +31,16 @@ public class ExerciseExecutor {
 			jshell.close();
 		}
 		return st.toString();
+	}
+
+	private JShell initPrintStreamVariable() throws FileNotFoundException {
+		st = new StringBuilder();
+		out = new PrintStream("out.txt");
+		err = new PrintStream("err.txt");
+		System.setOut(out);
+		System.setErr(err);
+		JShell jshell = JShell.builder().out(out).build();
+		return jshell;
 	}
 
 	public void HandlerParsing(RoutingContext rc) {

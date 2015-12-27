@@ -3,11 +3,11 @@ import java.nio.file.Paths;
 
 import io.vertx.core.json.JsonObject;
 
-public class Exercice {
+public class Exercise {
 	private int id;
 	private String content;
 
-	public Exercice(int id, Path path) {
+	public Exercise(int id, Path path) {
 		this.id = id;
 		this.content = setContent(path);
 	}

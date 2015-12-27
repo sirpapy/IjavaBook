@@ -14,20 +14,16 @@ path = "/exercice/" + adress;
 var contentXhr = getXMLHttpRequest();
 $(document).ready(function() {
 
-
-    jQuery.ajax({
-        url: path,
-        type: "POST",
-        success: function (data) {
-            console.log(data);
-            document.getElementById("Exercice").innerHTML = data.content;
-        }
-    });
-
+	jQuery.ajax({
+		url : path,
+		type : "POST",
+		success : function(data) {
+			console.log(data);
+			document.getElementById("Exercice").innerHTML = data.content;
+		}
+	});
 
 });
-
-
 
 // var eb = new EventBus("/eventbus/");
 //
@@ -47,10 +43,10 @@ $(document).ready(function() {
 
 function envoieCode() {
 	xhr.open("POST", "/eventbus", true);
-	alert(document.getElementById('code').value);
+	// alert(document.getElementById('code').value);
 	xhr.send(document.getElementById('code').value);
 }
-
+/*
 $(document).bind(
 		'keypress',
 		function(event) {
@@ -67,7 +63,7 @@ $(document).bind(
 				envoieCode();
 			}
 		});
-
+*/
 function getXMLHttpRequest() {
 	var xhr = null;
 

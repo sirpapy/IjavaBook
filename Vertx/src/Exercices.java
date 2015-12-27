@@ -8,25 +8,27 @@ public class Exercices {
 	EventBus eb;
 
 	public Exercices(EventBus eb) {
-		this.exercice = new HashMap<>();
+		this.listExercise = new HashMap<>();
 		this.eb = eb;
 	}
 
-	private HashMap<Integer, Exercice> exercice;
+	private HashMap<Integer, Exercise> listExercise;
 
 	public void send() {
 
+	}
+
+	public void put(Exercise exercise) {
+		listExercise.put(listExercise.size(), exercise);
 	}
 
 	public void getExercice(RoutingContext rc) {
 		int id = 0;
 
 		id = Integer.valueOf(rc.request().getParam("id"));
-		if (exercice.containsKey(id)) {
-			 rc.response().putHeader("content-type",
-			"application/json").setStatusCode(200)
-			.end(exercice.get(id).toString());
-			
+		if (listExercise.containsKey(id)) {
+			rc.response().putHeader("content-type", "application/json").setStatusCode(200)
+					.end(listExercise.get(id).toString());
 
 			// // Register to listen for messages coming IN to the server
 			// eb.consumer("exercice.toServer").handler(message -> {
@@ -35,7 +37,7 @@ public class Exercices {
 			// eb.publish("exercice.toClient",
 			// MarkDownHandler.markdownUpdater(Paths.get("Exercice1.txt")));
 			// });
-			//eb.send("exercice", "mksqdjflksdjf");
+			// eb.send("exercice", "mksqdjflksdjf");
 
 			//
 		} else {
@@ -44,10 +46,10 @@ public class Exercices {
 
 	}
 
-	public void init() {
-		exercice.put(0, new Exercice(0, Paths.get("exercice0.txt")));
-		exercice.put(1, new Exercice(1, Paths.get("exercice1.txt")));
-		exercice.put(2, new Exercice(2, Paths.get("exercice2.txt")));
-	}
+	/*public void init() {
+		listExercise.put(0, new Exercise(0, Paths.get("exercice0.txt")));
+		listExercise.put(1, new Exercise(1, Paths.get("exercice1.txt")));
+		listExercise.put(2, new Exercise(2, Paths.get("exercice2.txt")));
+	}*/
 
 }

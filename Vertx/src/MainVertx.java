@@ -1,4 +1,6 @@
+import java.io.IOException;
 import java.io.PrintStream;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import Execise.ExerciseExecutor;
@@ -13,7 +15,7 @@ import io.vertx.ext.web.handler.sockjs.PermittedOptions;
 import io.vertx.ext.web.handler.sockjs.SockJSHandler;
 
 public class MainVertx extends AbstractVerticle {
-	private WatchService watcher = new WatchService();
+	private WatchDirectory watcher;
 	private String codeActuel;
 	public final Object monitor = new Object();
 	private Exercices exercises;
@@ -53,11 +55,12 @@ public class MainVertx extends AbstractVerticle {
 
 	@Override
 	public void start() throws Exception {
+
 		PrintStream out = new PrintStream("out.txt");
 		PrintStream err = new PrintStream("err.txt");
 		ExerciseExecutor ex = new ExerciseExecutor();
+		TheWatcher();
 		exercises = new Exercices(vertx.eventBus());
-		exercises.init();
 		Router router = Router.router(vertx);
 		router.post("/exercice/:id").handler(exercises::getExercice);
 		router.route().handler(StaticHandler.create());
@@ -67,11 +70,37 @@ public class MainVertx extends AbstractVerticle {
 		opts = new BridgeOptions().addOutboundPermitted(new PermittedOptions().setAddress("exercice"));
 		ebHandler = SockJSHandler.create(vertx).bridge(opts);
 		eb = vertx.eventBus();
-		// System.out.println("Serveur lancé");
+		System.out.println("Serveur lancé");
 
 		server.requestHandler(router::accept).listen(8989);
+
 		updateExercice(1);
 
+	}
+
+	private void TheWatcher() throws IOException {
+		Path path = Paths.get("C:/Users/Sirpapy/workspace/Vertx/exercice");
+		watcher = new WatchDirectory(path);
+		new Thread(() -> {
+			try {
+				for (;;) {
+					System.out.println(path);
+					exercises.put(watcher.takeModifiedExercise());
+					System.out.println(watcher.takeModifiedExercise());
+				}
+			} catch (Exception e) {
+			}
+
+		}).start();
+
+		new Thread(() -> {
+			try {
+				System.out.println(path);
+				watcher.startDirectory();
+			} catch (Exception e) {
+			}
+
+		}).start();
 	}
 
 	private void updateExercice(int i) {
