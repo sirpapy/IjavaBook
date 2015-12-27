@@ -13,14 +13,17 @@ import io.vertx.core.http.HttpServerResponse;
 import io.vertx.core.http.ServerWebSocket;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
+import io.vertx.ext.web.handler.BodyHandler;
 import io.vertx.ext.web.handler.StaticHandler;
+import io.vertx.ext.web.handler.sockjs.BridgeOptions;
+import io.vertx.ext.web.handler.sockjs.PermittedOptions;
 import jdk.jshell.JShell;
 
 public class MainVertx extends AbstractVerticle {
 	WatchService watcher = new WatchService();
 	String codeActuel;
 	public final Object monitor = new Object();
-	private Exercices exercises = new Exercices();
+	private Exercices exercises;
 
 	public void JshellHandler(RoutingContext rc, Buffer buf) {
 		System.out.println(codeActuel = buf.toString());
@@ -50,19 +53,31 @@ public class MainVertx extends AbstractVerticle {
 			throw new FileNotFoundException();
 		}
 	}
+	
 
 	@Override
 	public void start() throws Exception {
-		HttpServer server = vertx.createHttpServer();
-		System.out.println("Serveur lancé");
+
+		exercises = new Exercices(vertx.eventBus());
 		exercises.init();
 		Router router = Router.router(vertx);
+		router.post("/exercice/:id").handler(exercises::getExercice);
+		router.route().handler(StaticHandler.create());
+	    //router.route("/").handler(BodyHandler.create());
+			
+		
+		BridgeOptions opts = new BridgeOptions().addOutboundPermitted(new PermittedOptions().setAddress("exercice"));
+		//SockJSHandler ebHandler = SockJSHandler.create(vertx).bridge(opts);
+		//router.route("/eventbus/*").handler(ebHandler);
+		HttpServer server = vertx.createHttpServer();
+		System.out.println("Serveur lancé");
 
-		router.route("/").handler(StaticHandler.create());
-		router.route("/exercice/*").handler(StaticHandler.create("exercice"));
-		router.get("/exercice/:id").handler(exercises::getExercice);
-		server.requestHandler(router::accept).listen(8080);
-		updateExercice(1);
+
+		
+
+
+		server.requestHandler(router::accept).listen(8989);
+		// updateExercice(1);
 
 	}
 
@@ -71,14 +86,14 @@ public class MainVertx extends AbstractVerticle {
 			@Override
 			public void handle(final ServerWebSocket ws) {
 				vertx.setPeriodic(1000l, t -> {
-					if (watcher.isModified(1) == true) {
-						ws.writeFinalTextFrame(MarkDownHandler.markdownUpdater(Paths.get("Exercice1.txt")));
-						System.out.println("Modification detecté!!!!!");
-					}
+					// if (watcher.isModified(1) == true) {
+					ws.writeFinalTextFrame(MarkDownHandler.markdownUpdater(Paths.get("Exercice1.txt")));
+					System.out.println("Modification detecté!!!!!");
+					// }
 				});
 			}
 
-		}).listen(8080);
+		}).listen(8989);
 	}
 
 	public static void main(String args[]) {

@@ -1,21 +1,72 @@
-//document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
 
-adress = window.location + "";
-adress = adress.split("/");
-adress = adress[adress.length - 1];
-adress = adress.split("?");
-adress = adress[adress.length - 1];
-adress = adress.split("=");
-adress = adress[adress.length - 1];
 
-path = "ws://localhost:8080/exercice?id=" + adress;
-alert(path);
-var socket = new WebSocket(path);
-socket.onmessage = function(event) {
-	// alert("Received data from websocket: " + event.data);
-	document.getElementById('Exercice').innerHTML = "->" + event.data + "<-"
-			+ '\n';
-}
+
+
+   //document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
+   adress = window.location + "";
+   adress = adress.split("/");
+   adress = adress[adress.length - 1];
+   adress = adress.split("?");
+   adress = adress[adress.length - 1];
+   adress = adress.split("=");
+   adress = adress[adress.length - 1];
+
+   path = "ID exercice demandé: " + adress;
+
+   path = "http://localhost:8989/exercice/"+adress;
+   $(document).ready(function() {
+   $.post(path, function(items) {
+   
+       alert(items);       
+     })
+   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$.post(path,
+    {
+        name: "Donald Duck",
+        city: "Duckburg"
+    },
+    function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+    });
+ 
+
+var eb = new EventBus("/eventbus/");
+
+eb.onopen = function () {
+	alert(path);
+  eb.registerHandler("exercice", function (err, msg) {
+    alert(msg.body + "\n");
+  });
+};
+
+
+
+
+
+/*
+var socket = new WebSocket("ws://localhost:8080/exercice/*");
+    socket.onmessage = function(event) {
+       // alert("Received data from websocket: " + event.data);
+        //document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n';
+    }
+*/
 
 function envoieCode() {
 	xhr.open("POST", "/eventbus", true);

@@ -12,12 +12,12 @@ public class Exercice {
 		this.content = setContent(path);
 	}
 
-	private String setContent(Path path) {
-		return MarkDownHandler.markdownUpdater(Paths.get("Exercice1.txt"));
+	private String setContent(Path path) {		
+		return MarkDownHandler.markdownUpdater(path);
 	}
 
 	public JsonObject toJson() {
-		return new JsonObject().put(String.valueOf(this.id), this.content);
+		return new JsonObject().put("id",String.valueOf(this.id)).put("content",  this.content);
 
 	}
 

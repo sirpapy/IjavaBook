@@ -2,9 +2,13 @@
 //document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
 
 
-var adress = window.location+"";
+adress = window.location+"";
 adress = adress.split("/");
-adress = adress[address.length-1];
+adress = adress[adress.length-1];
+adress = adress.split("?");
+adress = adress[adress.length-1];
+adress = adress.split("=");
+adress = adress[adress.length-1];
 alert(adress);
 
 

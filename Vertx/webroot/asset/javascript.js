@@ -1,40 +1,55 @@
-
 //document.getElementById("Exercice").innerHTML ="salutklsjmqlkdfjqmskdfjmkqsjdf";
-
-
-var adress = window.location+"";
+adress = window.location + "";
 adress = adress.split("/");
-adress = adress[address.length-1];
-alert(adress);
+adress = adress[adress.length - 1];
+adress = adress.split("?");
+adress = adress[adress.length - 1];
+adress = adress.split("=");
+adress = adress[adress.length - 1];
+
+path = "ID exercice demandé: " + adress;
+
+path = "/exercice/" + adress;
+
+var contentXhr = getXMLHttpRequest();
+$(document).ready(function() {
 
 
-var socket = new WebSocket("ws://localhost:8080/eventbus2");
-
-    socket.onmessage = function(event) {
-       // alert("Received data from websocket: " + event.data);
-        document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n';
-    }
-
-    
-
-var socket = new WebSocket("ws://localhost:8080/exercice/*");
-
-    socket.onmessage = function(event) {
-       // alert("Received data from websocket: " + event.data);
-        document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n';
-    }
-
-    
+    jQuery.ajax({
+        url: path,
+        type: "POST",
+        success: function (data) {
+            console.log(data);
+            document.getElementById("Exercice").innerHTML = data.content;
+        }
+    });
 
 
+});
+
+
+
+// var eb = new EventBus("/eventbus/");
+//
+// eb.onopen = function() {
+// alert(path);
+// eb.registerHandler("exercice", function(err, msg) {
+// alert(msg.body + "\n");
+// });
+// };
+
+/*
+ * var socket = new WebSocket("ws://localhost:8080/exercice/*");
+ * socket.onmessage = function(event) { // alert("Received data from websocket: " +
+ * event.data);
+ * //document.getElementById('Exercice').innerHTML="->"+event.data+"<-"+'\n'; }
+ */
 
 function envoieCode() {
 	xhr.open("POST", "/eventbus", true);
 	alert(document.getElementById('code').value);
 	xhr.send(document.getElementById('code').value);
 }
-
-
 
 $(document).bind(
 		'keypress',
@@ -46,7 +61,9 @@ $(document).bind(
 				// <textarea>qsldjhflqksjhd</textarea>');
 				document.getElementById('codeArea').innerHTML = document
 						.getElementById('codeArea').innerHTML
-						+ '</br> </br> <textarea code="code"'+1+'"></textarea>'
+						+ '</br> </br> <textarea code="code"'
+						+ 1
+						+ '"></textarea>'
 				envoieCode();
 			}
 		});
