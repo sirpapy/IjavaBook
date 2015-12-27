@@ -1,3 +1,4 @@
+Exercice 0
 It's sometimes handy for breaking things up.
 
 ## Images

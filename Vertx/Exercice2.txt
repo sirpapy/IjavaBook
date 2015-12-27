@@ -1,3 +1,4 @@
+Exercice 2
 It's sometimes handy for breaking things up.
 
 ## Images

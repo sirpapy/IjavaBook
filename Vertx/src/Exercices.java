@@ -20,7 +20,6 @@ public class Exercices {
 
 	public void getExercice(RoutingContext rc) {
 		int id = 0;
-		System.out.println("mlkqsdjfksqjdf");
 
 		id = Integer.valueOf(rc.request().getParam("id"));
 		if (exercice.containsKey(id)) {
